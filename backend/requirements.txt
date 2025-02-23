@@ -6,3 +6,4 @@ langchain-openai
 pydantic
 python-multipart
 langsmith
+dotenv

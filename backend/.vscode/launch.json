@@ -14,7 +14,7 @@
         "main:app",
         "--reload"
       ],
-      "python": "/Users/sakaishun/Desktop/projects/egghead/langgraph_sandbox/backend/.venv/bin/python"
+      "python": "/Users/sakaishun/Desktop/projects/egghead/langgraph_sandbox/.venv/bin/python"
     }
   ]
 }

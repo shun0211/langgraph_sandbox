@@ -2,8 +2,11 @@ from fastapi import FastAPI, Depends
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel
 from functools import lru_cache
+from dotenv import load_dotenv
 
 from agents.documentation_agent import DocumentationAgent
+
+load_dotenv()
 
 app = FastAPI()
 
@@ -21,7 +24,7 @@ class UserRequest(BaseModel):
     request: str
 
 
-@app.post("/generate-requirements")
+@app.post("/generate_requirements")
 async def generate_requirements(
     user_request: UserRequest,
     documentation_agent: DocumentationAgent = Depends(get_documentation_agent),
